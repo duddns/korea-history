@@ -110,7 +110,7 @@ const Timeline = () => {
             centerOnInit={false}
             limitToBounds={true}
             wheel={{
-              step: 0.1,
+              step: 0.001,
               disabled: false
             }}
             panning={{
@@ -296,7 +296,7 @@ const Timeline = () => {
               <br />
               <strong>기간:</strong> {hoveredState.endYear - hoveredState.startYear}년
             </p>
-            <div className="border-t pt-2 mt-2">
+            <div className="border-t border-gray-200 pt-2 mt-2">
               <p className="text-sm font-semibold text-gray-700 mb-1">주요 사건:</p>
               <ul className="text-xs text-gray-600 space-y-1">
                 {hoveredState.events.map((event, idx) => (
